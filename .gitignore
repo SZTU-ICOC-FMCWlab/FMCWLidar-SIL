@@ -1,0 +1,20 @@
+# MATLAB / Simulink generated artifacts
+*.asv
+*.autosave
+*.m~
+*.slxc
+slprj/
+codegen/
+work/
+*.mexw64
+
+# Simulation output and logs
+*.log
+*.tmp
+*.mat
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
