@@ -2,6 +2,14 @@
 
 所有连续量使用 SI 单位。默认离散采样周期为 `10e-9 s`，对应 100 MHz 软件仿真时钟。
 
+## 模块内说明书入口
+
+双击 `LDC220CModel`、`TED200CModel`、`BNLD1550Laser` 或
+`PDB450CModel` 模块会调用 `open_fmcwlidar_manual`，并使用系统默认PDF
+阅读器打开对应说明书。右键模块并选择 **Block Parameters (MATLAB System)**
+可继续修改模型参数。MZI、ADC、DAC和FPGA模块没有独立厂商PDF，双击后打开
+本接口文档。
+
 ## FPGAOffsetBinaryDAC
 
 | 方向 | 端口 | 类型/单位 | 含义 |

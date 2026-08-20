@@ -13,6 +13,10 @@ work/
 *.tmp
 *.mat
 
+# Vendor manuals are local-only; public redistribution rights are not assumed
+docs/manuals/*.pdf
+!docs/manuals/README.md
+
 # OS and editor files
 .DS_Store
 Thumbs.db

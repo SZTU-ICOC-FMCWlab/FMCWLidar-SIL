@@ -59,7 +59,15 @@ FMCW LiDAR SIL
 open_system('FMCWLidar_SIL_Library');
 ```
 
-库内每个器件都是独立模块。双击 MATLAB System 模块可以查看和修改器件参数；打开 `Documentation` 子系统可以在 Simulink 界面内阅读接口和单位说明。
+库内每个器件都是独立模块。双击 `LDC220C`、`TED200C`、`BNLD1550`
+或 `PDB450C` 模块会直接打开对应PDF说明书；双击MZI、ADC、DAC和FPGA模块
+会打开模型接口文档。需要修改器件模型参数时，使用模块右键菜单中的
+**Block Parameters (MATLAB System)**。打开 `Documentation` 子系统可以在
+Simulink界面内阅读全部接口和单位说明。
+
+PDF按以下顺序解析：`docs/manuals`本地目录、父工程现有器件手册目录、厂商
+产品网页。厂商手册没有提交到公共仓库；独立克隆的本地PDF配置见
+[`docs/manuals/README.md`](docs/manuals/README.md)。
 
 ![FMCW LiDAR SIL Simulink library](docs/FMCWLidar_SIL_Library_preview.png)
 
@@ -95,3 +103,4 @@ docs/           器件接口、模型边界和架构说明
 - [`docs/DEVICE_INTERFACES.md`](docs/DEVICE_INTERFACES.md)：所有模块的端口、单位和默认参数
 - [`docs/SIL_STATUS.md`](docs/SIL_STATUS.md)：已完成范围、验证结果和进入 FIL 前的缺口
 - [`docs/FMCW发射端架构与风险分析.md`](docs/FMCW发射端架构与风险分析.md)：完整器件选型、架构和风险分析
+- [`docs/manuals/README.md`](docs/manuals/README.md)：模块双击打开PDF的本地文件名和查找顺序
